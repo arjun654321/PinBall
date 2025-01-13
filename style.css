@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Hind');
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	color: #dee2e6;
+	background-color: #212529;
+	font-family: 'Hind', sans-serif;
+	text-transform: uppercase;
+}
+
+
+.game-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+
+.instructions {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.container {
+	position: relative;
+	line-height: 0;
+}
+
+.score {
+	position: absolute;
+	/* top: 10px; */
+	line-height: 1;
+	padding-top: 10px;
+}
+
+.score span {
+	font-size: 3.25rem;
+}
+
+.current-score {
+	left: 10px;
+}
+
+.high-score {
+	text-align: right;
+	right: 10px;
+}
+
+.trigger {
+  appearance: none;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	bottom: 10px;
+  border: 0;
+	border-radius: 50%;
+  color: inherit;
+	background-color: #e64980;
+	text-align: center;
+	line-height: 80px;
+	font-size: 1.25rem;
+  text-transform: inherit;
+	cursor: pointer;
+	user-select: none;
+  outline: none;
+}
+
+.left-trigger {
+	left: 10px;
+}
+
+.right-trigger {
+	right: 60px;
+}
+
+canvas {
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-height: 0px) {
+	.container { transform: scale(0.25); }
+}
+@media (min-height: 400px) {
+	.container { transform: scale(0.5); }
+}
+@media (min-height: 600px) {
+	.container { transform: scale(0.75); }
+}
+@media (min-height: 800px) {
+	.container { transform: scale(1); }
+}
+
+
+
+.container {
+    position: relative;
+    /* ...existing code... */
+}
+
+.game-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 0;
+    letter-spacing: 5px;
+}
+
+.scores-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.score {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.instructions {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    width: 100%;
+}
+
